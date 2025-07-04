@@ -14,3 +14,12 @@ services:
         value: Akkaradech18
       - key: N8N_BASIC_AUTH_PASSWORD
         value: yourpassword
+      - key: N8N_DATA_FOLDER
+        value: /data
+    volumes:
+      - name: n8n_data
+        mountPath: /data
+
+volumes:
+  - name: n8n_data
+
