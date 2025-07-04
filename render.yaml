@@ -16,10 +16,9 @@ services:
         value: yourpassword
       - key: N8N_DATA_FOLDER
         value: /data
-    volumes:
-      - name: n8n_data
-        mountPath: /data
+    disk:
+      name: n8n-data
+      mountPath: /data
+      sizeGB: 1
 
-volumes:
-  - name: n8n_data
 
